@@ -17,4 +17,8 @@ Usage
 -----
 *$('#box').getTitle('www.google.com'); It fills element box with the google's title
 
+Todo
+----
+*At the moment is working only synchronously, which is lame :(
+
 
