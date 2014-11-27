@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>jQuery getTitle plugin from referral Url</title>
+	<script type="text/javascript" src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+	<script type="text/javascript" src='getTitle.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var url='';
+			$('#getTitle').on('click',function(){
+				url = $('#reqUrl').val();
+				$('#title').getTitle(url);
+			});
+		});		
+	</script>
+</head>
+<body>
+	<input id='reqUrl' type="text" placeholder='type url'>
+	<button id='getTitle'>submit</button><br/>
+	<span id='title'></span>
+</body>
+</html>
